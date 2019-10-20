@@ -1,0 +1,128 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+ <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="My Commercial AD About Page">
+    <meta name="author" content="Clarence Mitchell">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS -->
+
+    <link href="~/Content/AboutBase.css" rel="stylesheet" />
+    <link href="~/Content/AboutSkeleton.css" rel="stylesheet" />
+    <link href="~/Content/AboutLayout.css" rel="stylesheet" />
+
+ 
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Favicons-->
+
+    <link rel="shortcut icon" href="~/Content/Images/favicon.ico">
+    <link rel="apple-touch-icon" href="~/Content/Images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/Content/Images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/Content/Images/apple-touch-icon-114x114.png">
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- JQUERY COUNTDOWN-Change here your launch site date -->
+    @*<script type="text/javascript" src="js/countdown/jquery.countdown.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //var austDay = new Date();
+            //austDay = new Date(austDay.getFullYear() + 1, 5-12, 11);
+            //$('#defaultCountdown').countdown({until: austDay});
+            var untilDay = new Date(2016, 5, 7, 23, 59, 59, 0);
+            $('#defaultCountdown').countdown({ until: untilDay });
+        });
+    </script>*@
+</head>
+<body>
+    <div id="line_oblique_1">
+        <div class="container">
+
+            <div class="sixteen" id="logo"><a href="http://www.csumb.edu" target="_blank">CSUMB Logo</a><h1>Please watch our video about our site</h1></div>
+
+            <div class="twelve columns omega" id="video_container">
+                <iframe src="https://www.youtube.com/embed/seuJlFYY0BE"></iframe><!-- Your video -->
+                <!--<iframe width="560" height="315" src="https://youtu.be/seuJlFYY0BE" frameborder="0" allowfullscreen></iframe> -->
+            </div>
+            <div class="four columns alpha" id="timer_container">
+                <div id="back_in">
+                    <h2>We are looking forward<br>to seeing your video AD!</h2>
+                </div>
+                <div id="defaultCountdown"></div><!-- Countdown -->
+
+            </div><!-- End timer_container -->
+            
+            <br/>
+
+                @*<div class="col-md-50 w3-center center-block w3-text-white large">*@
+            <div class="sixteen">
+                <h1 class="large">
+                    <p> Have you ever had a moment in which you were doing something, or witnessing something and thought, that would make a great commercial?</p>
+                    <br/>
+                    <p>How does one go about submitting their idea for a commercial? </p>
+                    <br/>
+                    <p>What about businesses that are looking for great commercials AD ideas from the general public, do they need to create a new website every time they want to mount a campaign to get the commercial Ads from the general public?</p>
+                    <br/>
+                    <br/>
+                    <p>My Commercial AD is an online system for showcasing Freelance or homemade commercials (rough video footage) and connecting these with potential businesses. It provides a connection for companies looking to create a general public AD campaign with creative people. </p>
+                </h1>
+            </div>
+
+            <br class="clear">
+
+
+            <footer class="sixteen columns">
+                @*<div class="eleven columns omega">
+                <div id="form_bg">
+                    <form action="#" method="post" id="myform">
+                        <input type="text" name="Email" value="Please notify me when site is up!" class="required email" onBlur="if (this.value == '') { this.value = 'Please notify me when site is up!';}" onFocus="if (this.value == 'Please notify me when site is up!') {this.value = '';}">
+                        <button type="submit" class="send_bt">Subscribe</button>
+                    </form>
+                </div>
+            </div>*@
+                <div class="five columns alpha">
+                    <ul id="follow">
+                        <li><a href="https://plus.google.com/s/clarence%20mitchell%20csumb/top" title="Follow us on Google+" target="_blank" class="tooltip_1" id="tw">Google+</a></li>
+
+                        <li><a href="#" id="fb" class="tooltip_1" title="Follow us on Facebook">Facebook</a></li>
+                    </ul>
+                </div><!-- End follow -->
+
+                <br class="clear">
+
+                <div id="copy">
+                    <p class=" five columns omega">Copyright © 2016. All rights reserved. </p>
+                    <div class=" eleven columns alpha">
+                        <ul id="second_nav">
+                            <li>CSUMB Links: </li>
+                            @*<li><a href="http://csumb-cmitchell-cst499-2016.blogspot.com/" target="_blank">My Learning Journal</a></li>*@
+                            <li><a href="http://www.csumb.edu" target="_blank">CSUMB</a></li>
+                            @*<li><a href=".https://csumb.edu/capstone" target="_blank">CAPSTONE</a></li>*@
+                        </ul>
+
+                    </div>
+                </div>
+            </footer><!-- End footer -->
+
+        </div><!-- container -->
+    </div><!-- End line_oblique_1 -->
+    <!-- JQUERY plugins: Moderniz, Tooltip, form Validate -->
+    @*<script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>*@
+</body>
+</html>
